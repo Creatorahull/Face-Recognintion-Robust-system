@@ -8,7 +8,7 @@ from model import FaceClassifier
 IMG_SIZE = 160
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-CONF_THRESHOLD = 0.25  # <-- your new reality check
+CONF_THRESHOLD = 0.25 
 
 transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
